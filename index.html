@@ -9,7 +9,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #011632;
+            background: linear-gradient(to bottom, #011632, #022f5f);
             color: #f9c9c7;
             font-family: 'Cormorant Garamond', serif;
             text-align: center;
@@ -18,38 +18,46 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-  .header-image {
-     border: 5px solid #f9c9c7; /* Euer Rosa */
-      width: 100%;
-    max-height: 450px;
-    object-fit: cover;
-    margin-top: 20px; /* etwas Abstand zum oberen Rand */
-    border-radius: 8px; /* sanfte Ecken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* dezenter Schatten für mehr Tiefe */
-}
-
-
-
+        }
+        .header-image {
+            width: 90%;
+            max-height: 450px;
+            object-fit: cover;
+            object-position: 20% center;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            border: 5px solid #f9c9c7;
+        }
         h1 {
             font-family: 'Pinyon Script', cursive;
-            font-size: 48px;
-            margin: 20px 0 10px;
+            font-size: 60px;
+            margin-top: 30px;
+            color: #f9c9c7;
         }
         p {
             font-size: 24px;
-            margin: 0;
+            margin: 5px 0;
         }
         .date {
             font-size: 30px;
             font-weight: bold;
-            margin: 20px 0;
+            margin-top: 15px;
+            border-top: 2px solid #f9c9c7;
+            padding-top: 10px;
+        }
+        .subtext {
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
-    <img src="bild-neu.jpg" alt="Save the Date" class="header-image">
+    <img src="bild.jpg" alt="Save the Date" class="header-image">
     <h1>Save the Date</h1>
     <p>Wir heiraten!</p>
     <p class="date">25. Juli 2026</p>
+    <p class="subtext">Einladung mit allen Details folgt bald.</p>
 </body>
 </html>
